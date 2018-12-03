@@ -1,0 +1,392 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+    box-sizing: border-box;
+    transition: all .5s ease;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, abbr,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label,
+article, aside, 
+figure, figcaption, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/* colors used on site 
+    DARK ORANGE     #f8ab1f     rgb(248,171,31)
+    LIGHT ORANGE    #f9be50     rgb(249,190,80)
+*/
+
+
+/* MY Styles */
+    /* Global styles */
+html, 
+body {
+    height: 100%;
+}
+body {
+    font-family: "Josefin Sans", arial, sans-serif;
+    line-height: 1.4;
+}
+h1 {
+    font-size: 46px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 18px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+abbr {
+    text-decoration: none;
+}
+
+/* Mobile first styles */
+.container {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* Page Header styles */
+.pageHeader {
+    height: 100%;
+    background: url('../img/hero.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+.callToAction {
+    min-width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.callToAction p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+.shopNow {
+    display: inline-block;
+    background: #fff;
+    padding: 14px 12px;
+    font-size: 15px;
+    border-radius: 100px;  
+}
+.shopNow:hover {
+    box-shadow: inset 0 0 0 5px #f8ab1f;   
+}
+
+/* hover effect */
+
+.navIcon {
+    cursor: pointer;
+    color: #000;
+    font-size: 28px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Quality headphones section */
+.qualityHead {
+    margin: 80px 0;
+}
+.qualityHead p {
+    text-indent: 30px;
+}
+.learnMore {
+    color: #f8ab1f;
+    padding: 10px;
+    font-size: 18px;
+}
+/* Free Downdload section */
+.freeDownload,
+.preOrder {
+    background: #f9be50;
+    color: #fff;
+    padding: 60px;
+    text-transform: capitalize;
+} /* Same styles no need to write twice */
+
+/* Hottest headphones  */
+.hotHeadphones {
+    margin: 80px 0;
+}
+.hotArt {
+    margin-bottom: 30px;
+    position: relative;
+}
+.hotImg img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.hotImg a {
+    background: #f9be50;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    font-size: 16px;
+    border-radius: 15%/50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.hotImg a:hover {
+    background: #f8ab1f;
+}
+.hotText {
+    background: #f9be50;
+    padding: 20px;
+}
+.hotText p {
+    color: #fff;
+}
+/* Hot Headphones */
+.forFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column,
+.hotArt {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+.forFlex img {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.hotImg img:hover {
+    transform: scale(1.15);
+}
+.hotImg {
+    overflow: hidden;
+}
+/* Meet New Headphones  */
+.meetNew i {
+    color: #f9be50;
+}
+.column img {
+    margin-top: 8px;
+}
+
+/* Pre Order */
+.preOrder {
+    margin: 80px 0;
+    text-align: center;
+}
+.preOrder p {
+    text-transform: uppercase;
+}
+.preOrder h3 {
+    margin: 30px 0 40px;
+}
+
+/* Buy Headphones */
+.buyHead {
+    margin: 80px 0;
+    text-align: center;
+}
+.buyHead h2 {
+    margin-bottom: 40px;
+}
+.buyTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.buyText {
+    margin: 30px 0 10px;
+    color: gray;
+}
+.buyHead div {
+    margin-bottom: 30px;
+}
+.buyHead .back {
+    font-size: 64px;
+    color: #f9be50;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+}
+.front {
+    position: relative;
+    z-index: 1;
+}
+/* MAP */
+.map p {
+    text-transform: uppercase;
+    color: gray;
+    text-align: center;
+}
+.map h3 {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* footer */
+.pageFooter {
+    margin: 80px 0;
+}
+.socialList {
+    list-style: none;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.socialList {
+    margin-left: auto;
+    display: flex;
+
+}
+.socialList a {
+    font-size: 18px;
+}
+.icon-bg {
+    color: #f8ab1f;
+}
+.icon-bg:hover {
+    color: #f9be50;
+}
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    flex: 100%;
+}
+
+
+
+
+/* Medium devices ( 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    .container {
+        max-width: 720px;
+    }
+    
+    .pageHeader {
+        text-align: left;
+    }
+    .callToAction {
+        left: unset;
+        top: unset;
+        bottom: 50%;
+        transform: translate(0,50%);
+        max-width: 350px;
+    }
+
+    .hotArt {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+    /* Hottest Headphones */
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+} /* END Medium devices ( 768px and up) */
+
+
+/* Large devices ( 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .container {
+        max-width: 960px;
+    }
+    h2 {
+        text-align: left;
+    }
+
+    /* Hottest Headphones */
+    .column {
+        width: 25%;
+        max-width: 25%;
+    }
+
+    /* Pre Order */
+    .preOrder {
+        text-align: left;
+    }
+    .preOrder h3 {
+        text-align: left;
+    }
+    .preOrder .container {
+        position: relative;
+    }
+    .preOrder .shopNow {
+        position: absolute;
+        right: 20px;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+
+    /* footer */
+    .socialList {
+        order: 2;
+    }
+    .copy { 
+        order: 1;
+        flex: auto;
+        margin-top: 0;
+        align-self: center;
+    }
+
+} /*  END Large devices ( 992px and up) */
+
+/* Extra large devices  */
+@media only screen and (min-width: 1200px) {
+    
+    .container {
+        max-width: 1140px;
+    }
+
+    .preOrder .container {
+        padding-left: 120px;
+    }    
+    .preOrder .shopNow {
+
+        right: 120px;
+    }
+} /* END of Extra large */
